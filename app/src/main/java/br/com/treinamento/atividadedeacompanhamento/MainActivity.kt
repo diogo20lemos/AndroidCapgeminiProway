@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
+import br.com.treinamento.atividadedeacompanhamento.atividade02.evento.Activity02EventoApp
 import br.com.treinamento.atividadedeacompanhamento.ui.screen.ColaboradorScreen
 
 class MainActivity : ComponentActivity() {
@@ -14,9 +15,13 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MaterialTheme {
-                Surface(modifier = Modifier.fillMaxSize()) {
-                    ColaboradorScreen()
-                }
+                // atividade 02
+                Activity02EventoApp()
+
+// Para executar a atividade 1, comente a linha acima e descomente a linha ab
+//                Surface(modifier = Modifier.fillMaxSize()) {
+//                    ColaboradorScreen()
+//                }
             }
         }
     }
