@@ -8,6 +8,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import br.com.treinamento.atividadedeacompanhamento.atividade02.evento.Activity02EventoApp
+import br.com.treinamento.atividadedeacompanhamento.atividade03.notas.ui.Activity03NotasApp
 import br.com.treinamento.atividadedeacompanhamento.ui.screen.ColaboradorScreen
 
 class MainActivity : ComponentActivity() {
@@ -15,13 +16,17 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MaterialTheme {
-                // atividade 02
-                Activity02EventoApp()
+                Activity03NotasApp()
 
-// Para executar a atividade 1, comente a linha acima e descomente a linha ab
-//                Surface(modifier = Modifier.fillMaxSize()) {
-//                    ColaboradorScreen()
-//                }
+                // Atividade 1:
+                // ColaboradorScreen()
+
+                // Atividade 2:
+                // Activity02EventoApp()
+
+                // Atividade 3:
+                // Activity03NotasApp()
+
             }
         }
     }
